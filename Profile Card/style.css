@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body,
+html
+{
+    height: 100dvh;
+    width: 100dvw;
+    
+
+}
+
+.main{
+    height: 100dvh;
+    width: 100dvw;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: -11px 13px 20px 0px #928e8e;
+
+}
+
+.card::before{
+    content: "";
+    background-color: #3F71E6;
+    height: 38%;
+    width: 100%;
+    border-radius:  15px 15px 0 0 ;
+    position: absolute;
+    top: 0;
+}
+
+ .user-profile{
+z-index: 1;
+
+border-radius: 50%;
+display: flex;
+justify-content: center;
+border: 3px solid #3F71E6;
+
+}
+.about{
+    font-size: 14px;
+}
+.text-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    object-fit: cover;
+    height:120px;
+    width: 120px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+
+}
+.user-name{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.links a{
+    font-size: 30px;
+    text-decoration: none;
+    
+}
+.links a:first-child{
+    color: #222;
+}
+.links a:nth-child(2)
+{
+    color: rgb(45, 45, 192);
+}
+
+.buttons {
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+.buttons button{
+    border: none;
+    background-color: #3F71E6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 15px;
+    
+   
+
+}
+
+
+.icons{
+    display: flex;
+ justify-content: center;
+
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 15px;
+
+    
+
+}
+.icons i{
+    font-size: 20px;
+}
+.icons i:hover {
+color: red;
+}
+.icons .center-icon{
+    border-left: #9a9898 solid ;
+    border-right: #928e8e solid ;
+    padding:0 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+
